@@ -1,0 +1,88 @@
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -icab-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  box-sizing: border-box;  }
+
+img,video{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1em;
+}
+
+body{
+  font-size:100%;
+  line-height:1.5;
+  font-family:sans-serif;
+}
+
+.container{
+  width:95%;
+  margin:0 auto;
+}
+
+.boxes div{
+  width:50%;
+  border:1px solid #999;
+  margin-bottom:1em;
+  padding:.5em;
+  height:4em;
+  line-height:3em;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+
+@media only screen and (max-width: 20em) {
+  .boxes div{
+    background-color: #ffe9e9;
+  }
+}
+
+@media only screen and (min-width: 20em) and (max-width: 30em) {
+
+    .boxes div{
+      width:48%;
+      float:left;
+      background-color: #e9ffe9;
+    }
+
+    .boxes div:nth-child(2n){
+      float:right;
+    }
+}
+
+
+@media only screen and (min-width: 30em) and (max-width: 50em) {
+
+   .boxes div{
+      width:32%;
+      float:left;
+      margin-right:1.9%;
+      background-color: #e9e9ff;
+    }
+
+    .boxes div:nth-child(3n){
+      float:right;
+      margin-right:0;
+    }
+}
+
+@media only screen and (min-width: 50em) {
+
+   .boxes div{
+      width:24%;
+      float:left;
+      margin-right:1.32%;
+      background-color: #ffffe9;
+    }
+
+    .boxes div:nth-child(4n){
+      float:right;
+      margin-right:0;
+    }
+}
